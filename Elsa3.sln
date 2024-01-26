@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElsaServer", "ElsaServer\ElsaServer.csproj", "{68AD45CA-8307-4372-869F-D7BCDBE14C87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElsaStudioBlazorServer", "ElsaStudioBlazorServer\ElsaStudioBlazorServer.csproj", "{304A2FAE-D8F5-400C-910C-D2D9DBD5A7D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68AD45CA-8307-4372-869F-D7BCDBE14C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68AD45CA-8307-4372-869F-D7BCDBE14C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68AD45CA-8307-4372-869F-D7BCDBE14C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68AD45CA-8307-4372-869F-D7BCDBE14C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{304A2FAE-D8F5-400C-910C-D2D9DBD5A7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304A2FAE-D8F5-400C-910C-D2D9DBD5A7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304A2FAE-D8F5-400C-910C-D2D9DBD5A7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304A2FAE-D8F5-400C-910C-D2D9DBD5A7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD2CDC9C-D321-47CB-9C2A-EC10B82E1FBA}
+	EndGlobalSection
+EndGlobal
