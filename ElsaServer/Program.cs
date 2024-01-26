@@ -87,7 +87,7 @@ builder.Services.AddElsa(elsa =>
 
     elsa.UseHttp(http => http.ConfigureHttpOptions = options =>
     {
-        options.BaseUrl = new Uri("https://localhost:7278");
+        options.BaseUrl = new Uri("https://localhost:5001");
         options.BasePath = "/workflows"; //工作流程入口
     });
 
