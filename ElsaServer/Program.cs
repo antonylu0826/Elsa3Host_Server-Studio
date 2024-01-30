@@ -1,7 +1,8 @@
 using Elsa.EntityFrameworkCore.Modules.Management;
 using Elsa.EntityFrameworkCore.Modules.Runtime;
 using Elsa.Extensions;
-using Microsoft.AspNetCore.Builder;
+using ElsaServer.CustomActivities;
+using FluentStorage;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -96,6 +97,23 @@ builder.Services.AddElsa(elsa =>
 
     // Register custom workflows from the application, if any.
     elsa.AddWorkflowsFrom<Program>();
+
+    elsa.AddActivity<Greeter>();
+
+    // Use email activities.
+    elsa.UseEmail(email =>
+    {
+        email.ConfigureOptions = options =>
+        {
+            options.Host = "192.168.10.253";
+            options.Port = 25;
+            options.SecureSocketOptions = MailKit.Security.SecureSocketOptions.None;
+        };
+    });
+
+    elsa.UseFileStorage(fileStorage => StorageFactory.Blobs.DirectoryFiles("D:\\ElsaTest"));
+
+    elsa.UseSQLServer();
 });
 
 var app = builder.Build();
