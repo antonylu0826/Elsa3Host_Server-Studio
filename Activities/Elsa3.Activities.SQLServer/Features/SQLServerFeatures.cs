@@ -16,6 +16,7 @@ namespace Elsa3.Activities.SQLServer.Features
                 management.AddVariableTypes(new[]
                 {
                     typeof(DataTable),
+                    typeof(DataRow),
                 }, "SqlClient");
 
                 management.AddActivitiesFrom<SQLServerFeatures>();
